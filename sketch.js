@@ -22,8 +22,8 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-    createCanvas(400,700);
-    umbrella = new Umbrella(200,500);
+    createCanvas(windowWidth,windowHeight);
+    umbrella = new Umbrella(windowWidth/2,windowHeight/2);
 
     //create drops
     if(frameCount%150===0){
